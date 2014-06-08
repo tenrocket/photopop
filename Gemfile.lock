@@ -30,6 +30,8 @@ GEM
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
+    bldr (1.0.1)
+      multi_json
     builder (3.2.2)
     capybara (2.2.1)
       mime-types (>= 1.16)
@@ -113,6 +115,7 @@ GEM
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
+    rack-cors (0.2.9)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.1.0)
@@ -189,6 +192,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
+  bldr
   capybara
   carrierwave
   coffee-rails (~> 4.0.0)
@@ -203,6 +207,7 @@ DEPENDENCIES
   omniauth (~> 1.1.1)
   omniauth-facebook (= 1.4.0)
   pg
+  rack-cors
   rails (= 4.1.0)
   rspec-rails
   sass-rails (~> 4.0.3)

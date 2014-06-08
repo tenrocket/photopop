@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # get "/auth/facebook/callback" => "auth#callback"
 
+  resources :api
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
   resources :photos, only: [:index]
@@ -13,5 +14,7 @@ Rails.application.routes.draw do
 
   get "/auth/facebook/callback" => "sessions#create"
   get "signout" => "sessions#destroy"
+
+  post "api/photos" => "api/photos#create"
 
 end

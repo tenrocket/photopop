@@ -19,6 +19,8 @@ gem 'geocoder'
 gem 'omniauth', '~> 1.1.1'
 gem 'omniauth-facebook', '1.4.0'
 gem 'koala'
+gem 'rack-cors', :require => 'rack/cors'
+gem 'bldr'
 
 group :test do
 	gem 'rspec-rails'
