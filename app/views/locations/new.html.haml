@@ -1,0 +1,14 @@
+= form_for @new_location, method: :post do |f|
+	ADDRESS
+	= f.text_field :address
+	%br
+	LATITUDE
+	= f.text_field :longitude
+	%br
+	LONGITUDE
+	= f.text_field :longitude
+	%br
+	IP ADDRESS
+	= f.text_field :ip_address
+	%br
+	= f.submit "CREATE LOCATION"

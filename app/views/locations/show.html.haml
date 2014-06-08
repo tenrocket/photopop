@@ -1,0 +1,9 @@
+= @location.address
+%br
+= @location.latitude
+%br
+= @location.longitude
+%br
+= @location.ip_address
+%br
+= image_tag "http://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16%markers=#{@location.latitude}%2C#{@location.longitude}"
